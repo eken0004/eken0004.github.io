@@ -1,0 +1,83 @@
+body {
+    /* CSS Comments: Command + /  for windows: Ctrl +/ */
+    color: rgb(3, 110, 3);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    color: rgb(244, 204, 131);
+}
+
+
+
+/* Select multiple elements */
+
+h1,
+h2,
+h3{
+    text-decoration: underline;
+}
+
+/* Select child elements */
+
+
+
+
+
+nav ul li {
+    list-style:none;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    background-color: rgb(198, 238, 129);
+    border: 1px solid red;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: rgb(21, 76, 58);
+    color:white;
+    text-decoration: none;
+}
+
+nav .navigation-list {
+    list-style-type: none;
+}
+
+
+
+   /* font-weight: bold; */
+
+.large-text {
+    font-size: 18px;
+}
+
+.site-title {
+    color:rgb(244, 204, 131) ;
+}
+
+article > p {
+    font-size: 18px;
+    color: blue;
+}
+
+/* 0+1 2+1 4+1 6+1 = 1 3 5 7 */
+article ul li:nth-child(odd) {
+    background-color: #B376C2;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+header, footer {
+background-color: #B376C2;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
