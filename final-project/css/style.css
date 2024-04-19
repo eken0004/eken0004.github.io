@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* BEGINNING OF CSS RESET SECTION */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* END OF CSS RESET SECTION */
+
+/* **************** - MY CSS - ****************** */
+
+/* MOBILE STYLES */
+
+*:not(i) {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+button {
+  all: unset;
+}
+
+img.full-width {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: #222;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+nav ul li {
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+
+nav ul li form {
+  width: 100%;
+}
+
+nav ul li.desktop-logo {
+  display: none !important;
+}
+
+nav ul li div.link-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li.active {
+  background-color: #c78c06;
+  color: #222;
+}
+
+nav ul li:not(.active) {
+  display: flex;
+  justify-content: center;
+  color: #c78c06;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  flex: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 18px;
+}
+
+.input-container button {
+  width: 42px;
+  height: 42px;
+  background-color: #222;
+  border: 1px solid #c78c06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container button i {
+  color: #c78c06;
+}
+
+section.welcome {
+  background-image: url("../images/main-banner.jpg");
+  background-position: center;
+
+  background-size: cover;
+  height: 100vh;
+  max-height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+section.welcome h1 {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+section.welcome p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+section.welcome .connect-button button {
+  background-color: #c78c06;
+  padding: 36px;
+  font-size: 24px;
+  color: #222;
+  display: flex;
+  gap: 20px;
+}
+
+section.welcome .black-wrapper {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+section.about-us {
+  background-color: #ffe6ac;
+  padding: 12px;
+}
+
+section.about-us h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.about-us p {
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+section.our-services {
+  padding: 12px;
+  gap: 12px;
+}
+
+section.our-services h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.our-services .services {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+
+section.our-services .services .service {
+  display: flex;
+  flex-direction: column;
+}
+
+section.our-services .services .service .text-container {
+  background-color: #ffe6ac;
+  padding: 12px;
+}
+
+section.our-services .services .service h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.our-services .services .service p {
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+section.our-services .services .service .action-button button {
+  background-color: #222;
+  padding: 36px;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+
+section.our-vision {
+  background-image: url("../images/vision.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 12px;
+  margin-top: 16px;
+}
+
+section.our-vision h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.our-vision p {
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+section.our-vision .our-vision-button button {
+  background-color: #11253d;
+  padding: 36px;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  border: 1px solid #c78c06;
+}
+
+section.our-team {
+  padding: 12px;
+}
+
+section.our-team .team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section.our-team h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.our-team .team-member {
+  display: flex;
+  flex-direction: column;
+}
+
+section.our-team .team-member .text-section {
+  background-color: #ffe6ac;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+section.our-team .team-member .text-section h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.our-team .team-member .text-section h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #c78c06;
+}
+
+section.our-team .team-member .text-section p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+section.contact-us {
+  padding: 12px;
+  padding-top: 40px;
+}
+
+section.contact-us h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.contact-us h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.contact-us .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+section.contact-us .grid > * {
+  grid-column: span 2;
+}
+
+section.contact-us .grid .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+section.contact-us .grid .contact-form form .form-group input,
+section.contact-us .grid .contact-form form .form-group textarea {
+  flex: 1;
+  padding: 10px;
+}
+
+section.contact-us .grid .contact-form form button {
+  background-color: #222;
+  padding: 8px;
+  font-size: 20px;
+  color: #c78c06;
+  font-weight: 550;
+}
+
+section.contact-us .grid .work-schedule {
+  /* padding: 12px; */
+}
+
+section.contact-us .grid .work-schedule h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+section.contact-us .grid .work-schedule table {
+  width: 100%;
+}
+
+section.contact-us .grid .work-schedule table thead {
+  background-color: #ffe6ac;
+  border: 1px solid red;
+}
+
+section.contact-us .grid .work-schedule table,
+th,
+td {
+  border: 1px solid #222;
+  color: #222;
+}
+
+section.contact-us .grid .work-schedule th,
+td {
+  padding: 16px;
+}
+
+section.contact-us .grid .location {
+  /* padding: 12px; */
+}
+
+section.contact-us .grid .location h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+section.contact-us .grid .location iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #222;
+  padding: 12px;
+  padding-top: 40px;
+  color: #c78c06;
+}
+
+footer p {
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/* **************** - Desktop styles - ****************** */
+
+@media screen and (min-width: 1200px) {
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav ul li.desktop-logo {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  nav ul li.active {
+    margin-left: 30px;
+  }
+
+  nav ul li.active img {
+    display: none;
+  }
+
+  nav ul li div.link-wrapper {
+    padding-top: 0px;
+  }
+
+  section.welcome {
+    max-height: 550px;
+  }
+
+  section.welcome .black-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  section.about-us .about-us-container {
+    display: flex;
+    gap: 12px;
+  }
+  section.about-us .about-us-container > * {
+    flex-basis: 50%;
+  }
+
+  section.our-services {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  section.our-services .services {
+    /* This is already a grid so no need to repeat the css */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  section.our-services .services .service:nth-child(1),
+  section.our-services .services .service:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  section.our-services .services .service:nth-child(3),
+  section.our-services .services .service:nth-child(4),
+  section.our-services .services .service:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  section.our-team {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.our-team .team-members {
+    gap: 0;
+  }
+
+  section.our-team .team-member {
+    flex-direction: row;
+  }
+
+  section.our-team .team-members .team-member:last-child {
+    flex-direction: row-reverse;
+  }
+
+  section.contact-us {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  section.contact-us .grid {
+    gap: 12px;
+  }
+
+  section.contact-us .grid .contact-form {
+    order: 1;
+    grid-column: span 1;
+  }
+
+  section.contact-us .grid .work-schedule {
+    order: 3;
+    grid-column: span 2;
+  }
+
+  section.contact-us .grid .location {
+    order: 2;
+    grid-column: span 1;
+  }
+}
